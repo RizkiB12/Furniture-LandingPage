@@ -69,9 +69,10 @@ body {
 /* Home Start */
 
 .home {
-  margin-top: 4.6rem;
+  margin-top: 6rem;
   margin-bottom: 0;
   padding: 1.4rem 7% 0;
+  background: url(../assets/img/home/home.png) no-repeat right center;
 }
 
 .parent-home {
@@ -121,12 +122,12 @@ body {
   border: 1px solid;
 }
 
-.home-price {
+/* .home-price {
   background-image: url(../assets/img/home/home.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 .home-price-details {
   margin-top: 350px;
@@ -193,6 +194,7 @@ body {
 .choose-menu {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 
 .choose-menu-furniture {
@@ -213,6 +215,46 @@ body {
   font-style: normal;
   font-weight: 700;
 }
+
+/* Choose End */
+
+/* Partner Start */
+
+.partner {
+  padding: 1.4rem 7%;
+}
+
+.parent-partner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.partner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partner-title h2 {
+  color: #2f241f;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.partner-title p {
+  color: #2f241f;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Partner End */
 
 /* Media Queries */
 
@@ -266,6 +308,7 @@ body {
 
   .home {
     margin-top: 6rem;
+    background-image: none;
   }
 
   .home-title {
@@ -317,6 +360,7 @@ body {
   .home-price-view {
     padding: 16px 10%;
   }
+  /* Home Section End */
 
   /* Choose Us Start */
 
