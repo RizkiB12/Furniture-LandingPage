@@ -8,6 +8,7 @@
   box-sizing: border-box; /* tidak perlu mengatur dimensi elemen saat memberi padding atau border  */
   border: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -90,7 +91,7 @@ body {
 }
 
 .home-title h1 {
-  font-size: 5rem;
+  font-size: 5.2rem;
   font-weight: 800;
   color: #2f241f;
   line-height: normal;
@@ -185,7 +186,7 @@ body {
 
 .choose-title h2 {
   color: #e5f0b6;
-  font-size: 2.8rem;
+  font-size: 4rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -221,6 +222,7 @@ body {
 /* Partner Start */
 
 .partner {
+  margin-top: 4rem;
   padding: 1.4rem 7%;
 }
 
@@ -240,7 +242,7 @@ body {
 
 .partner-title h2 {
   color: #2f241f;
-  font-size: 96px;
+  font-size: 5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -248,13 +250,94 @@ body {
 
 .partner-title p {
   color: #2f241f;
-  font-size: 24px;
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 /* Partner End */
+
+/* Categories Start */
+
+.categories {
+  margin-top: 2rem;
+  padding: 1.4rem 7% 1.4rem 0;
+}
+
+.parent-categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 3fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+}
+
+.categories-paragraf {
+  color: #2f241f;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+
+.categories-title {
+  color: #2f241f;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 2.5rem;
+}
+
+.categories-bedroom {
+  color: #000;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.2rem;
+}
+
+.categories-livingroom {
+  margin-bottom: 2rem;
+  background-color: #e5f0b6;
+  padding: 1.8rem 1.2rem;
+}
+
+.categories-livingroom-title {
+  color: #000;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.categories-livingroom-paragraf {
+  margin-top: 1.5rem;
+}
+
+.categories-home {
+  color: #000;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.2rem;
+}
+
+.categories-gaming {
+  color: #000;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 1rem 1.2rem;
+}
+
+/* Categories End */
 
 /* Media Queries */
 
@@ -402,6 +485,25 @@ body {
   .choose-menu-furniture br {
     display: none;
   }
+  /* Choose us End */
+
+  /* Partner Start */
+  .partner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .partner-title {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .partner-brands img {
+    width: 100%;
+  }
+  /* Partner End */
 }
 
 /* Mobile */
