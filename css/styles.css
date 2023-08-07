@@ -267,10 +267,20 @@ body {
 
 .parent-categories {
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr 3fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-rows: 1fr;
-  grid-column-gap: 20px;
+  grid-column-gap: 0px;
   grid-row-gap: 0px;
+}
+
+.categories-image-content img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+.categories-content {
+  padding: 0 0 0 1rem;
 }
 
 .categories-paragraf {
@@ -338,6 +348,53 @@ body {
 }
 
 /* Categories End */
+
+/* Our Product Start */
+
+.product {
+  background-color: #2f241f;
+}
+
+.parent-product {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 3rem 7%;
+}
+
+.product-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-content-title {
+  color: #e5f0b6;
+}
+
+.product-paragraf {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.product-title {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.product-see a {
+  background-color: #e5f0b6;
+  color: #2f241f;
+  border-radius: 12px;
+  padding: 14px 36px;
+}
+
+/* Our Product End */
 
 /* Media Queries */
 
@@ -504,6 +561,65 @@ body {
     width: 100%;
   }
   /* Partner End */
+
+  /* Categories Start */
+
+  .categories {
+    margin-top: 3rem;
+    padding: 1rem 7%;
+  }
+
+  .parent-categories {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .categories-image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .categories-image-content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+  }
+
+  .categories-paragraf {
+    text-align: center;
+    font-size: 1.9rem;
+  }
+
+  .categories-title {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .categories-bedroom {
+    font-size: 1.7rem;
+  }
+
+  .categories-livingroom-title {
+    font-size: 1.7rem;
+  }
+
+  .categories-livingroom-paragraf {
+    font-size: 1.5rem;
+  }
+
+  .categories-home {
+    font-size: 1.7rem;
+  }
+
+  .categories-gaming {
+    font-size: 1.7rem;
+  }
+
+  /* Categories End */
 }
 
 /* Mobile */
