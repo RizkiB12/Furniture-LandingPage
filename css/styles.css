@@ -394,7 +394,55 @@ body {
   padding: 14px 36px;
 }
 
+.parent-product-caraousel {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 3rem 7%;
+}
+
 /* Our Product End */
+
+/* Deals Starts */
+
+.deals {
+  padding: 3.2rem 7%;
+}
+
+.parent-deals {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.deals-title {
+  font-size: 4.3rem;
+  margin-top: 3rem;
+}
+
+.deals-input {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 20px 5px 0;
+  margin-top: 3rem;
+}
+
+input {
+  border: none;
+}
+
+.mail {
+  background-color: #e5f0b6;
+  border-radius: 0 5px 5px 0;
+  padding: 2px 4px;
+  font-size: 4rem;
+}
+/* Deals End */
 
 /* Media Queries */
 
@@ -620,6 +668,44 @@ body {
   }
 
   /* Categories End */
+
+  /* Product Start */
+
+  /* Product End */
+
+  /* Deals Start */
+  .parents-deals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .deals-paragraf {
+    text-align: center;
+  }
+
+  .deals-title {
+    text-align: center;
+  }
+
+  .deals-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+  }
+
+  input {
+    border: none;
+  }
+
+  .mail {
+    background-color: #e5f0b6;
+    border-radius: 0 10px 10px 0;
+    padding: 2px 5px;
+  }
+  /* Deals End */
 }
 
 /* Mobile */
