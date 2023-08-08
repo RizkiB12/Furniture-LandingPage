@@ -419,9 +419,20 @@ body {
   grid-row-gap: 0px;
 }
 
+.deals-paragraf {
+  color: #2f241f;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
 .deals-title {
-  font-size: 4.3rem;
-  margin-top: 3rem;
+  color: #2f241f;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 2rem;
 }
 
 .deals-input {
@@ -443,6 +454,85 @@ input {
   font-size: 4rem;
 }
 /* Deals End */
+
+/* Footer Start */
+
+footer {
+  padding: 4rem 5%;
+}
+
+.parent-footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.footer-main img {
+  width: 100px;
+}
+
+.footer-paragraf {
+  margin-top: 1.1rem;
+  color: #667085;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer-list-title {
+  color: #101828;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.footer-support {
+  margin-right: 1.5rem;
+}
+
+.footer-social {
+  margin-right: 1.5rem;
+}
+
+.footer-list-paragraf {
+  color: #667085;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 1.9rem;
+}
+
+/* Footer End */
+
+/* Top Start*/
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: wheat;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* Top End */
 
 /* Media Queries */
 
@@ -671,6 +761,23 @@ input {
 
   /* Product Start */
 
+  .product-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product-title {
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.18px;
+  }
+
+  .product-see a {
+    padding: 10px 15px;
+  }
+
   /* Product End */
 
   /* Deals Start */
@@ -706,6 +813,34 @@ input {
     padding: 2px 5px;
   }
   /* Deals End */
+
+  /* Footer Start */
+
+  .parent-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-main img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .footer-paragraf {
+    text-align: center;
+  }
+
+  .footer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.8rem;
+  }
+
+  /* Footer End */
 }
 
 /* Mobile */

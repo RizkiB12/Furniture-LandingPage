@@ -8,6 +8,24 @@
     <!-- Link Css -->
     <link rel="stylesheet" href="./css/styles.css" />
 
+    
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+
+    <!-- Owl Carousel Theme CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,10 +40,10 @@
       <a href="#" class="navbar-logo"><img src="./assets/img/logo/logo (1).png" alt="logo" /></a>
 
       <div class="navbar-nav">
-        <a href="#">About us</a>
-        <a href="#">Furniture</a>
-        <a href="#">Partnerships</a>
-        <a href="#">Contact</a>
+        <a href="#choose">About us</a>
+        <a href="#partner">Partnerships</a>
+        <a href="#product">Furniture</a>
+        <a href="#deals">Contact</a>
       </div>
 
       <div class="navbar-extra">
@@ -137,7 +155,7 @@
     <!-- Section Categories End -->
 
     <!-- Section Product Start -->
-    <section class="product">
+    <section id="product" class="product">
       <div class="parent-product">
         <div class="product-content">
           <div class="product-content-title">
@@ -149,14 +167,31 @@
           </div>
         </div>
       </div>
-      <div class="parent-product-caraousel">
-
+      <div class="parent-product-caraousel owl-carousel owl-theme">
+        <div>
+          <img src="./assets/img/product/Rectangle 6796.png" alt="product1">
+        </div>
+        <div>
+          <img src="./assets/img/product/Rectangle 6798.png" alt="product2">
+        </div>
+        <div>
+          <img src="./assets/img/product/Rectangle 6799.png" alt="product3">
+        </div>
+        <div>
+          <img src="./assets/img/product/Rectangle 6800.png" alt="product4">
+        </div>
+        <div>
+          <img src="./assets/img/product/Rectangle 6796.png" alt="product4">
+        </div>
+        <div>
+          <img src="./assets/img/product/Rectangle 6800.png" alt="product4">
+        </div>
       </div>
     </section>
     <!-- Section Product End -->
 
     <!-- Section Deals Start -->
-    <section class="deals">
+    <section id="deals" class="deals">
       <div class="parent-deals">
        <p class="deals-paragraf">LIMITED DEALS</p>
        <h2 class="deals-title">Become a member and get 10% off of your first purchase</h2>
@@ -169,18 +204,56 @@
     <!-- Section Deals End -->
 
     <!-- Section Footer Start -->
+    <footer class="footer">
+      <div class="parent-footer">
+        <div class="footer-main">
+          <img src="./assets/img/logo/logo (1).png" alt="logo">
+          <p class="footer-paragraf">Dekoor is a furniture company created to fulfill the needs of family <br> with aesthetic feeling in their furniture. Always pay attention to <br> details and give clear communication for the customers. Priority of <br> our design is comfortability.</p>
+          <p class="footer-paragraf">©Copyright 2022 Dekoor</p>
+        </div>
+        <div class="footer-list">
+          <div class="footer-support">
+            <p class="footer-list-title">Support</p>
+            <p class="footer-list-paragraf">FAQ</p>
+            <p class="footer-list-paragraf">Shipping & Returns</p>
+            <p class="footer-list-paragraf">Care Guide</p>
+            <p class="footer-list-paragraf">Redeem warranty</p>
+          </div>
+          <div class="footer-social">
+            <p class="footer-list-title">Social Media</p>
+            <p class="footer-list-paragraf">Instagram</p>
+            <p class="footer-list-paragraf">Facebook</p>
+            <p class="footer-list-paragraf">Twitter</p>
+            <p class="footer-list-paragraf">Tiktok</p>
+          </div>
+          <div class="footer-support">
+            <p class="footer-list-title">About Us</p>
+            <p class="footer-list-paragraf">Our story</p>
+            <p class="footer-list-paragraf">Designer</p>
+            <p class="footer-list-paragraf">Craftmanship</p>
+            <p class="footer-list-paragraf">Sustainability</p>
+          </div>
+        </div>
+      </div> 
+    </footer>
 
+    <div class="top" onclick="goToTop()">
+      <i data-feather="arrow-up"></i>
+    </div>
     <!-- Section Footer End -->
 
 
-
-
-
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
     <!-- Feather Icons Script -->
     <script>
       feather.replace();
     </script>
+
+     <!-- Owl Carousel -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 
     <!-- Js Script -->
     <script src="./js/script.js"></script>
